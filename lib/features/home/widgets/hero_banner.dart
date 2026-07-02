@@ -84,7 +84,7 @@ class HeroBanner extends StatelessWidget {
 
               MFilledButton(
                 size: MFilledButtonSize.medium,
-                label: 'Join Now',
+                label: 'Explore',
                 trailingIcon: const Icon(Icons.chevron_right_rounded),
                 onPressed: () {
                   NavigationUtils.goAuth(context);
