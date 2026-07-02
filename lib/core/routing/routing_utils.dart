@@ -38,6 +38,10 @@ abstract class NavigationUtils {
     context.goNamed(AppRoute.home);
   }
 
+  static void goAuth(BuildContext context) {
+    context.goNamed(AppRoute.auth);
+  }
+
   // static void goAbout(BuildContext context) {
   //   context.goNamed(RouteNames.about);
   // }

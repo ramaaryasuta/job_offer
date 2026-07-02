@@ -7,8 +7,9 @@ import 'core/routing/app_router.dart';
 import 'core/themes/app_theme.dart';
 
 void main() {
-  runZonedGuarded(() {
+  runZonedGuarded(() async {
     WidgetsFlutterBinding.ensureInitialized();
+
     usePathUrlStrategy();
 
     runApp(const MainApp());

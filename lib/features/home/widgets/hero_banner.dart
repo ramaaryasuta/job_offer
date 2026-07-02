@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/extension/context_extension.dart';
+import '../../../core/routing/routing_utils.dart';
 import '../../../gen/assets.gen.dart';
 import '../../../shared/components/buttons/filled_button.dart';
 import '../../../shared/components/images/asset_image.dart';
@@ -80,11 +81,14 @@ class HeroBanner extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: context.textTheme.bodyMedium!.copyWith(),
               ),
+
               MFilledButton(
                 size: MFilledButtonSize.medium,
                 label: 'Join Now',
                 trailingIcon: const Icon(Icons.chevron_right_rounded),
-                onPressed: () {},
+                onPressed: () {
+                  NavigationUtils.goAuth(context);
+                },
               ),
               Row(
                 spacing: 6,
